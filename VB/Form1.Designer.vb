@@ -27,10 +27,10 @@ Namespace Q134867
 		Private Sub InitializeComponent()
 			Me.components = New System.ComponentModel.Container()
 			Me.pivotGridControl1 = New DevExpress.XtraPivotGrid.PivotGridControl()
-			Me.nwindDataSet = New Q134867.nwindDataSet()
-			Me.productReportsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.productReportsTableAdapter = New Q134867.nwindDataSetTableAdapters.ProductReportsTableAdapter()
-			Me.fieldCategoryName = New DevExpress.XtraPivotGrid.PivotGridField()
+            Me.nwindDataSet = New nwindDataSet()
+            Me.productReportsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+            Me.productReportsTableAdapter = New nwindDataSetTableAdapters.ProductReportsTableAdapter()
+            Me.fieldCategoryName = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldProductName = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldProductSales = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldShippedDate = New DevExpress.XtraPivotGrid.PivotGridField()
@@ -120,8 +120,8 @@ Namespace Q134867
 		Private WithEvents pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
 		Private nwindDataSet As nwindDataSet
 		Private productReportsBindingSource As System.Windows.Forms.BindingSource
-		Private productReportsTableAdapter As Q134867.nwindDataSetTableAdapters.ProductReportsTableAdapter
-		Private fieldCategoryName As DevExpress.XtraPivotGrid.PivotGridField
+        Private productReportsTableAdapter As nwindDataSetTableAdapters.ProductReportsTableAdapter
+        Private fieldCategoryName As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductName As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductSales As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldShippedDate As DevExpress.XtraPivotGrid.PivotGridField
