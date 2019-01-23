@@ -7,8 +7,6 @@
 # How to toggle totals visibility at runtime
 
 
-<p>This example shows how to add an additional item to the headers popup menu. To do this, handle the PivotGridControl.ShowMenu event and create a new menu item that performs the required operation. The Menu is recreated at each popup, so you can recreate the menu item without searching for it if it already exists in the DXPopupMenu.Items collection.</p>
+This example demonstrates how to add an item to the headers popup menu. To do this, handle the [PivotGridControl.PopupMenuShowing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.PopupMenuShowing) event, create a new menu item and add it to the [e.Menu.Items](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.Menu.DXSubMenuItem.Items) collection.
 
-<br/>
-
-
+![screenshot](https://github.com/DevExpress-Examples/how-to-toggle-totals-visibility-at-runtime-e923/blob/13.1.4%2B/images/screenshot.png)

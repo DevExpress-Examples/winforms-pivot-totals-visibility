@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace Q134867
+﻿Namespace Q134867
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -34,9 +32,9 @@ Namespace Q134867
 			Me.fieldProductName = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldProductSales = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldShippedDate = New DevExpress.XtraPivotGrid.PivotGridField()
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' pivotGridControl1
@@ -49,7 +47,8 @@ Namespace Q134867
 			Me.pivotGridControl1.Name = "pivotGridControl1"
 			Me.pivotGridControl1.Size = New System.Drawing.Size(695, 383)
 			Me.pivotGridControl1.TabIndex = 0
-'			Me.pivotGridControl1.ShowMenu += New DevExpress.XtraPivotGrid.PivotGridMenuEventHandler(Me.pivotGridControl1_ShowMenu);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.pivotGridControl1.PopupMenuShowing += new DevExpress.XtraPivotGrid.PopupMenuShowingEventHandler(pivotGridControl1_PopupMenuShowing);
 			' 
 			' nwindDataSet
 			' 
@@ -107,10 +106,11 @@ Namespace Q134867
 			Me.Controls.Add(Me.pivotGridControl1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'			Me.Load += New System.EventHandler(Me.Form1_Load);
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
+			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
