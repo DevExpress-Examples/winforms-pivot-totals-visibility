@@ -1,4 +1,6 @@
-﻿Namespace Q134867
+Imports Microsoft.VisualBasic
+Imports System
+Namespace Q134867
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -25,40 +27,43 @@
 		Private Sub InitializeComponent()
 			Me.components = New System.ComponentModel.Container()
 			Me.pivotGridControl1 = New DevExpress.XtraPivotGrid.PivotGridControl()
-			Me.productReportsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.nwindDataSet = New Q134867.nwindDataSet()
-			Me.fieldCategoryName = New DevExpress.XtraPivotGrid.PivotGridField()
+            Me.nwindDataSet = New nwindDataSet()
+            Me.productReportsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+            Me.productReportsTableAdapter = New nwindDataSetTableAdapters.ProductReportsTableAdapter()
+            Me.fieldCategoryName = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldProductName = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldProductSales = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldShippedDate = New DevExpress.XtraPivotGrid.PivotGridField()
-			Me.productReportsTableAdapter = New Q134867.nwindDataSetTableAdapters.ProductReportsTableAdapter()
-			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' pivotGridControl1
 			' 
+			Me.pivotGridControl1.Anchor = (CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) Or System.Windows.Forms.AnchorStyles.Left) Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles))
 			Me.pivotGridControl1.Cursor = System.Windows.Forms.Cursors.Default
 			Me.pivotGridControl1.DataSource = Me.productReportsBindingSource
-			Me.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill
 			Me.pivotGridControl1.Fields.AddRange(New DevExpress.XtraPivotGrid.PivotGridField() { Me.fieldCategoryName, Me.fieldProductName, Me.fieldProductSales, Me.fieldShippedDate})
-			Me.pivotGridControl1.Location = New System.Drawing.Point(0, 0)
+			Me.pivotGridControl1.Location = New System.Drawing.Point(13, 13)
 			Me.pivotGridControl1.Name = "pivotGridControl1"
-			Me.pivotGridControl1.Size = New System.Drawing.Size(728, 454)
+			Me.pivotGridControl1.Size = New System.Drawing.Size(695, 383)
 			Me.pivotGridControl1.TabIndex = 0
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.pivotGridControl1.PopupMenuShowing += new DevExpress.XtraPivotGrid.PopupMenuShowingEventHandler(this.pivotGridControl1_PopupMenuShowing);
+'			Me.pivotGridControl1.ShowMenu += New DevExpress.XtraPivotGrid.PivotGridMenuEventHandler(Me.pivotGridControl1_ShowMenu);
+			' 
+			' nwindDataSet
+			' 
+			Me.nwindDataSet.DataSetName = "nwindDataSet"
+			Me.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
 			' 
 			' productReportsBindingSource
 			' 
 			Me.productReportsBindingSource.DataMember = "ProductReports"
 			Me.productReportsBindingSource.DataSource = Me.nwindDataSet
 			' 
-			' nwindDataSet
+			' productReportsTableAdapter
 			' 
-			Me.nwindDataSet.DataSetName = "nwindDataSet"
-			Me.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+			Me.productReportsTableAdapter.ClearBeforeFill = True
 			' 
 			' fieldCategoryName
 			' 
@@ -94,23 +99,18 @@
 			Me.fieldShippedDate.Name = "fieldShippedDate"
 			Me.fieldShippedDate.UnboundFieldName = "fieldShippedDate"
 			' 
-			' productReportsTableAdapter
-			' 
-			Me.productReportsTableAdapter.ClearBeforeFill = True
-			' 
 			' Form1
 			' 
 			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
 			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(728, 454)
+			Me.ClientSize = New System.Drawing.Size(720, 408)
 			Me.Controls.Add(Me.pivotGridControl1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
-			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+'			Me.Load += New System.EventHandler(Me.Form1_Load);
+			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.productReportsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
@@ -120,8 +120,8 @@
 		Private WithEvents pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
 		Private nwindDataSet As nwindDataSet
 		Private productReportsBindingSource As System.Windows.Forms.BindingSource
-		Private productReportsTableAdapter As Q134867.nwindDataSetTableAdapters.ProductReportsTableAdapter
-		Private fieldCategoryName As DevExpress.XtraPivotGrid.PivotGridField
+        Private productReportsTableAdapter As nwindDataSetTableAdapters.ProductReportsTableAdapter
+        Private fieldCategoryName As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductName As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductSales As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldShippedDate As DevExpress.XtraPivotGrid.PivotGridField
