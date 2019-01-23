@@ -1,27 +1,24 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using DevExpress.Utils.Menu;
 using DevExpress.XtraPivotGrid;
+using System;
+using System.Windows.Forms;
 
-namespace Q134867 {
-	public partial class Form1 : Form {
-		public Form1() {
+namespace Q134867
+{
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    {
+        public Form1() {
 			InitializeComponent();
+            pivotGridControl1.BestFit();
 		}
 
 		private void Form1_Load(object sender, EventArgs e) {
 			// TODO: This line of code loads data into the 'nwindDataSet.ProductReports' table. You can move, or remove it, as needed.
 			this.productReportsTableAdapter.Fill(this.nwindDataSet.ProductReports);
-
 		}
 
-        void pivotGridControl1_PopupMenuShowing(object sender, DevExpress.XtraPivotGrid.PopupMenuShowingEventArgs e) {
-            if(e.MenuType == DevExpress.XtraPivotGrid.PivotGridMenuType.Header) {
+        void pivotGridControl1_PopupMenuShowing(object sender, PopupMenuShowingEventArgs e) {
+            if (e.MenuType == PivotGridMenuType.Header) {
                 HandleHeaderShowMenu(e);
             }
         }
@@ -40,7 +37,7 @@ namespace Q134867 {
 			return true;
 		}
 
-        private void CreateToggleTotalsItem(DevExpress.XtraPivotGrid.PopupMenuShowingEventArgs e) {
+        private void CreateToggleTotalsItem(PopupMenuShowingEventArgs e) {
 			bool isTotalsVisible = e.Field.TotalsVisibility != PivotTotalsVisibility.None;
 			DXMenuItem toggleTotalItem = new DXMenuItem(isTotalsVisible ? "Hide Totals" : "Show Totals", ToggleTotalsMenuItemClick);
 			toggleTotalItem.BeginGroup = true;
