@@ -1,19 +1,16 @@
 using DevExpress.Utils.Menu;
 using DevExpress.XtraPivotGrid;
 using System;
-using System.Windows.Forms;
 
-namespace Q134867
-{
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
-    {
+namespace WinFormsPivot_App {
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm {
         public Form1() {
 			InitializeComponent();
             pivotGridControl1.BestFit();
 		}
 
 		private void Form1_Load(object sender, EventArgs e) {
-			// TODO: This line of code loads data into the 'nwindDataSet.ProductReports' table. You can move, or remove it, as needed.
+			// This line of code loads data into the 'nwindDataSet.ProductReports' table. You can move, or remove it, as needed.
 			this.productReportsTableAdapter.Fill(this.nwindDataSet.ProductReports);
 		}
 

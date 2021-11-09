@@ -4,18 +4,16 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="nwindConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="nwindConnectionString (Settings)" PropertyReference="ApplicationSettings.Q134867.Properties.Settings.GlobalReference.Default.nwindConnectionString" Provider="System.Data.OleDb">
-          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="nwindConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="nwindConnectionString (Settings)" PropertyReference="ApplicationSettings.WinFormsPivot_App.Settings.GlobalReference.Default.nwindConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductReportsTableAdapter" GeneratorDataComponentClassName="ProductReportsTableAdapter" Name="ProductReports" UserDataComponentName="ProductReportsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="nwindConnectionString (Settings)" DbObjectName="ProductReports" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="nwindConnectionString (Settings)" DbObjectName="ProductReports" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>SELECT CategoryName, ProductName, ProductSales, ShippedDate FROM ProductReports</CommandText>
-                    <Parameters>
-                    </Parameters>
+                    <Parameters />
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
@@ -26,37 +24,35 @@
               <Mapping SourceColumn="ProductSales" DataSetColumn="ProductSales" />
               <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
             </Mappings>
-            <Sources>
-            </Sources>
+            <Sources />
           </TableAdapter>
         </Tables>
-        <Sources>
-        </Sources>
+        <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="nwindDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="nwindDataSet" msprop:Generator_DataSetName="nwindDataSet">
+  <xs:element name="nwindDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="nwindDataSet" msprop:Generator_UserDSName="nwindDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ProductReports" msprop:Generator_UserTableName="ProductReports" msprop:Generator_RowDeletedName="ProductReportsRowDeleted" msprop:Generator_TableClassName="ProductReportsDataTable" msprop:Generator_RowChangedName="ProductReportsRowChanged" msprop:Generator_RowClassName="ProductReportsRow" msprop:Generator_RowChangingName="ProductReportsRowChanging" msprop:Generator_RowEvArgName="ProductReportsRowChangeEvent" msprop:Generator_RowEvHandlerName="ProductReportsRowChangeEventHandler" msprop:Generator_TablePropName="ProductReports" msprop:Generator_TableVarName="tableProductReports" msprop:Generator_RowDeletingName="ProductReportsRowDeleting">
+        <xs:element name="ProductReports" msprop:Generator_TableClassName="ProductReportsDataTable" msprop:Generator_RowEvArgName="ProductReportsRowChangeEvent" msprop:Generator_TableVarName="tableProductReports" msprop:Generator_TablePropName="ProductReports" msprop:Generator_RowDeletingName="ProductReportsRowDeleting" msprop:Generator_RowChangingName="ProductReportsRowChanging" msprop:Generator_RowEvHandlerName="ProductReportsRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductReportsRowDeleted" msprop:Generator_RowChangedName="ProductReportsRowChanged" msprop:Generator_UserTableName="ProductReports" msprop:Generator_RowClassName="ProductReportsRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="CategoryName" msprop:Generator_UserColumnName="CategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" minOccurs="0">
+              <xs:element name="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" msprop:Generator_UserColumnName="CategoryName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="15" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" minOccurs="0">
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ProductSales" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ProductSales" msprop:Generator_ColumnPropNameInRow="ProductSales" msprop:Generator_ColumnVarNameInTable="columnProductSales" msprop:Generator_ColumnPropNameInTable="ProductSalesColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="ShippedDate" msprop:Generator_UserColumnName="ShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ProductSales" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProductSales" msprop:Generator_ColumnPropNameInRow="ProductSales" msprop:Generator_ColumnPropNameInTable="ProductSalesColumn" msprop:Generator_UserColumnName="ProductSales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

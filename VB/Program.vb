@@ -2,7 +2,7 @@
 Imports System.Collections.Generic
 Imports System.Windows.Forms
 
-Namespace Q134867
+Namespace WinFormsPivot_App
 	Friend NotInheritable Class Program
 
 		Private Sub New()

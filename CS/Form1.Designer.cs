@@ -1,37 +1,38 @@
-namespace Q134867 {
-	partial class Form1 {
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+namespace WinFormsPivot_App {
+    partial class Form1 {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing) {
-			if(disposing && (components != null)) {
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent() {
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.productReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nwindDataSet = new Q134867.nwindDataSet();
+            this.nwindDataSet = new WinFormsPivot_App.nwindDataSet();
             this.fieldCategoryName = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldProductName = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldProductSales = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldShippedDate = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.productReportsTableAdapter = new Q134867.nwindDataSetTableAdapters.ProductReportsTableAdapter();
+            this.productReportsTableAdapter = new WinFormsPivot_App.nwindDataSetTableAdapters.ProductReportsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productReportsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
@@ -115,18 +116,18 @@ namespace Q134867 {
             ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
             this.ResumeLayout(false);
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private DevExpress.XtraPivotGrid.PivotGridControl pivotGridControl1;
-		private nwindDataSet nwindDataSet;
-		private System.Windows.Forms.BindingSource productReportsBindingSource;
-		private Q134867.nwindDataSetTableAdapters.ProductReportsTableAdapter productReportsTableAdapter;
-		private DevExpress.XtraPivotGrid.PivotGridField fieldCategoryName;
-		private DevExpress.XtraPivotGrid.PivotGridField fieldProductName;
-		private DevExpress.XtraPivotGrid.PivotGridField fieldProductSales;
-		private DevExpress.XtraPivotGrid.PivotGridField fieldShippedDate;
-	}
+        private DevExpress.XtraPivotGrid.PivotGridControl pivotGridControl1;
+        private nwindDataSet nwindDataSet;
+        private System.Windows.Forms.BindingSource productReportsBindingSource;
+        private WinFormsPivot_App.nwindDataSetTableAdapters.ProductReportsTableAdapter productReportsTableAdapter;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldCategoryName;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldProductName;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldProductSales;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldShippedDate;
+    }
 }
 

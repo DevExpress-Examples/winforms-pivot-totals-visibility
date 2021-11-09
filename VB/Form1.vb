@@ -3,7 +3,7 @@ Imports DevExpress.XtraPivotGrid
 Imports System
 Imports System.Windows.Forms
 
-Namespace Q134867
+Namespace WinFormsPivot_App
 	Partial Public Class Form1
 		Inherits DevExpress.XtraEditors.XtraForm
 
