@@ -6,7 +6,7 @@
 
 # Pivot Grid for WinForms - How to Customize the Popup Menu to Hide or Show the Totals
 
-This example demonstrates how to add a new item to the [Header Area](https://docs.devexpress.com/WindowsForms/1803) popup menu.
+This example demonstrates how to add a new item to the [Header Area](https://docs.devexpress.com/WindowsForms/1803) popup menu. This item shows or hides totals in the PivotGrid control.
 
 For this, handle the [PivotGridControl.PopupMenuShowing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.PopupMenuShowing) event. In the **PopupMenuShowing** event handler, create a new menu item and add it to the [e.Menu.Items](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.Menu.DXSubMenuItem.Items) collection.
 
