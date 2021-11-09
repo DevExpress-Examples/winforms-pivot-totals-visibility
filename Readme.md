@@ -10,7 +10,7 @@ This example demonstrates how to add a new item to the field header's popup menu
 
 For this, handle the [PivotGridControl.PopupMenuShowing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.PopupMenuShowing) event. In the **PopupMenuShowing** event handler, create a new menu item and add it to the [e.Menu.Items](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.Menu.DXSubMenuItem.Items) collection.
 
-![screenshot](https://github.com/DevExpress-Examples/how-to-toggle-totals-visibility-at-runtime-e923/blob/18.2.3%2B/images/screenshot.png)
+![screenshot](images/screenshot.png)
 
 <!-- default file list -->
 ## Files to Look at
