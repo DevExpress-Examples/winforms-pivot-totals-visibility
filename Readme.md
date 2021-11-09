@@ -20,5 +20,6 @@ Handle the [PivotGridControl.PopupMenuShowing](https://docs.devexpress.com/Windo
 <!-- default file list end -->
 ## Documentation 
 - [PivotGridControl.PopupMenuShowing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.PopupMenuShowing)
+- [Header Area Context Menu](https://docs.devexpress.com/WindowsForms/1725/controls-and-libraries/pivot-grid/ui-elements/header-area-context-menu)
 ## More Examples
 - [Pivot Grid for WinForms - How to Change SummaryDisplayType in the Context Menu](https://github.com/DevExpress-Examples/how-to-change-summarydisplaytype-via-the-context-menu-e2321)
