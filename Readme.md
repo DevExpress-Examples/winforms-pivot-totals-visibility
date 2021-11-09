@@ -6,7 +6,7 @@
 
 # Pivot Grid for WinForms - How to Customize the Popup Menu to Hide or Show the Totals
 
-This example demonstrates how to add a new item to the [Header Area](https://docs.devexpress.com/WindowsForms/1803) popup menu. This item shows or hides totals in the PivotGrid control.
+This example demonstrates how to add a new item to the field header's popup menu. This item shows or hides totals in the PivotGrid control.
 
 For this, handle the [PivotGridControl.PopupMenuShowing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.PopupMenuShowing) event. In the **PopupMenuShowing** event handler, create a new menu item and add it to the [e.Menu.Items](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.Menu.DXSubMenuItem.Items) collection.
 
@@ -20,6 +20,6 @@ For this, handle the [PivotGridControl.PopupMenuShowing](https://docs.devexpress
 <!-- default file list end -->
 ## Documentation 
 - [PivotGridControl.PopupMenuShowing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.PopupMenuShowing)
-- [Header Area Context Menu](https://docs.devexpress.com/WindowsForms/1725/controls-and-libraries/pivot-grid/ui-elements/header-area-context-menu)
+- [Field Header Context Menu](https://docs.devexpress.com/WindowsForms/1726/controls-and-libraries/pivot-grid/ui-elements/field-header-context-menu?p=netframework)
 ## More Examples
 - [Pivot Grid for WinForms - How to Change SummaryDisplayType in the Context Menu](https://github.com/DevExpress-Examples/how-to-change-summarydisplaytype-via-the-context-menu-e2321)
