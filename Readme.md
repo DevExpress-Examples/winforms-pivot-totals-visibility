@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-
+# Pivot Grid for WinForms - How to Customize the Popup Menu to Hide or Show Totals
 
 ![screenshot](images/screenshot.png)
 
