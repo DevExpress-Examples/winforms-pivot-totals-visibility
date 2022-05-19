@@ -25,13 +25,17 @@ namespace WinFormsPivot_App {
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding4 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.productReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nwindDataSet = new WinFormsPivot_App.nwindDataSet();
-            this.fieldCategoryName = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldProductName = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldProductSales = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldShippedDate = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldCategoryName1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldProductName1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldProductSales1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldShippedDate1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.productReportsTableAdapter = new WinFormsPivot_App.nwindDataSetTableAdapters.ProductReportsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productReportsBindingSource)).BeginInit();
@@ -44,12 +48,13 @@ namespace WinFormsPivot_App {
             this.pivotGridControl1.DataSource = this.productReportsBindingSource;
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
-            this.fieldCategoryName,
-            this.fieldProductName,
-            this.fieldProductSales,
-            this.fieldShippedDate});
+            this.fieldCategoryName1,
+            this.fieldProductName1,
+            this.fieldProductSales1,
+            this.fieldShippedDate1});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
+            this.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
             this.pivotGridControl1.Size = new System.Drawing.Size(728, 454);
             this.pivotGridControl1.TabIndex = 0;
             this.pivotGridControl1.PopupMenuShowing += new DevExpress.XtraPivotGrid.PopupMenuShowingEventHandler(this.pivotGridControl1_PopupMenuShowing);
@@ -64,39 +69,42 @@ namespace WinFormsPivot_App {
             this.nwindDataSet.DataSetName = "nwindDataSet";
             this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // fieldCategoryName
+            // fieldCategoryName1
             // 
-            this.fieldCategoryName.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
-            this.fieldCategoryName.AreaIndex = 0;
-            this.fieldCategoryName.Caption = "CategoryName";
-            this.fieldCategoryName.FieldName = "CategoryName";
-            this.fieldCategoryName.Name = "fieldCategoryName";
+            this.fieldCategoryName1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldCategoryName1.AreaIndex = 0;
+            this.fieldCategoryName1.Caption = "CategoryName";
+            dataSourceColumnBinding1.ColumnName = "CategoryName";
+            this.fieldCategoryName1.DataBinding = dataSourceColumnBinding1;
+            this.fieldCategoryName1.Name = "fieldCategoryName1";
             // 
-            // fieldProductName
+            // fieldProductName1
             // 
-            this.fieldProductName.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
-            this.fieldProductName.AreaIndex = 1;
-            this.fieldProductName.Caption = "ProductName";
-            this.fieldProductName.FieldName = "ProductName";
-            this.fieldProductName.Name = "fieldProductName";
+            this.fieldProductName1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldProductName1.AreaIndex = 1;
+            this.fieldProductName1.Caption = "ProductName";
+            dataSourceColumnBinding2.ColumnName = "ProductName";
+            this.fieldProductName1.DataBinding = dataSourceColumnBinding2;
+            this.fieldProductName1.Name = "fieldProductName1";
             // 
-            // fieldProductSales
+            // fieldProductSales1
             // 
-            this.fieldProductSales.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
-            this.fieldProductSales.AreaIndex = 0;
-            this.fieldProductSales.Caption = "ProductSales";
-            this.fieldProductSales.FieldName = "ProductSales";
-            this.fieldProductSales.Name = "fieldProductSales";
+            this.fieldProductSales1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldProductSales1.AreaIndex = 0;
+            this.fieldProductSales1.Caption = "ProductSales";
+            dataSourceColumnBinding3.ColumnName = "ProductSales";
+            this.fieldProductSales1.DataBinding = dataSourceColumnBinding3;
+            this.fieldProductSales1.Name = "fieldProductSales1";
             // 
-            // fieldShippedDate
+            // fieldShippedDate1
             // 
-            this.fieldShippedDate.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
-            this.fieldShippedDate.AreaIndex = 0;
-            this.fieldShippedDate.Caption = "Year";
-            this.fieldShippedDate.FieldName = "ShippedDate";
-            this.fieldShippedDate.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear;
-            this.fieldShippedDate.Name = "fieldShippedDate";
-            this.fieldShippedDate.UnboundFieldName = "fieldShippedDate";
+            this.fieldShippedDate1.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldShippedDate1.AreaIndex = 0;
+            this.fieldShippedDate1.Caption = "Year";
+            dataSourceColumnBinding4.ColumnName = "ShippedDate";
+            dataSourceColumnBinding4.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear;
+            this.fieldShippedDate1.DataBinding = dataSourceColumnBinding4;
+            this.fieldShippedDate1.Name = "fieldShippedDate1";
             // 
             // productReportsTableAdapter
             // 
@@ -124,10 +132,10 @@ namespace WinFormsPivot_App {
         private nwindDataSet nwindDataSet;
         private System.Windows.Forms.BindingSource productReportsBindingSource;
         private WinFormsPivot_App.nwindDataSetTableAdapters.ProductReportsTableAdapter productReportsTableAdapter;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldCategoryName;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldProductName;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldProductSales;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldShippedDate;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldCategoryName1;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldProductName1;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldProductSales1;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldShippedDate1;
     }
 }
 
